@@ -31,7 +31,7 @@ This assignment creates a report that answers the following questions:
 
 To do the project we need to do these tasks:
 * Load the data (i.e. read.csv())
-* Process/transform the data (if necessary) to ansuer the qustions above.
+* Process/transform the data (if necessary) to answer the questions above.
 * Make the Plots
 * Make a report in a R markdown document that can be processed by knitr and be transformed into an HTML file.
 
