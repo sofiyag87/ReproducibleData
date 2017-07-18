@@ -70,6 +70,9 @@ hist<-hist(steps_taken$steps,breaks=20,col="grey",main="Total Number of steps ta
 day",xlab="steps taken")
 ```
 
+![plot of chunk hist-1](D:/DATA_SCIENCE_SPECIALIZATION/5_Reproducible_data/week2/project1/ReproducibleData/project1_files/figure-html/hist-1.png)
+
+
 **Report**
 ```{r original_data, results="hold"}
 original_data<-summary(steps_taken$steps)
