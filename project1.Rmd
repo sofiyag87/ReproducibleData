@@ -62,7 +62,7 @@ steps_taken<-complete_data%>%
 hist<-hist(steps_taken$steps,breaks=20,col="grey",main="Total Number of steps taken each 
 day",xlab="steps taken")
 ```
-
+(https://github.com/sofiyag87/ReproducibleData/blob/master/project1_files/figure-html/hist-1.png)
 **Report**
 ```{r original_data, results="hold"}
 original_data<-summary(steps_taken$steps)
