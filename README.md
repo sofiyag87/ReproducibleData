@@ -6,7 +6,7 @@ The documents in this repo are:
 * A html file corresponding to the rmd file. (project1.html)
 * Plots in the document.
 
-##Data
+## Data
 
 The data for this assignment can be downloaded from the course web site:
 
