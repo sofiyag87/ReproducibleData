@@ -58,7 +58,7 @@ steps_taken<-complete_data%>%
 ```
 
 **Making the plot** 
-```{r hist,echo=TRUE,results="hold"}
+```{r hist,echo=TRUE,results="markup"}
 hist<-hist(steps_taken$steps,breaks=20,col="grey",main="Total Number of steps taken each 
 day",xlab="steps taken")
 ```
@@ -154,11 +154,11 @@ Imputing missing values in the original dataset had an impact in the frecuencies
 **Processing the data**
 
 First we need to change the class of the data from "factor" to "date" and then set the date as a weekday or a weekend. To to this let's create a new variable called new_data_type.
-As my system is in spanish we use "sábado" and "domingo" as "saturday" and "sunday". 
+As my system is in spanish we use "sÃ¡bado" and "domingo" as "saturday" and "sunday". 
 ```{r date, echo=TRUE }
 date<-as.Date(as.character(new_data$date))
 new_data$weekdays<-weekdays(date)
-new_data$type<-as.factor(ifelse(new_data$weekdays %in% c("sábado", "domingo"), 
+new_data$type<-as.factor(ifelse(new_data$weekdays %in% c("sÃ¡bado", "domingo"), 
 "weekend", "weekday"))
 
 steps_taken_weekdays<-new_data%>%
