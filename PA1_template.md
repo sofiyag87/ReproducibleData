@@ -35,7 +35,7 @@ hist<-hist(steps_taken$steps,breaks=20,col="grey",main="Total Number of steps ta
 day",xlab="steps taken")
 ```
 
-![plot of chunk hist-1](https://github.com/sofiyag87/ReproducibleData/blob/master/project1_files/figure-html/hist-1.png)
+![plot of chunk hist-1](https://github.com/sofiyag87/ReproducibleData/blob/master/PA1_template_files/figure-html/hist-1.png)
 
 
 **Report**
@@ -60,7 +60,7 @@ steps_interval<-complete_data%>%
 plot<-plot(steps_interval$interval,steps_interval$steps,type="l",col="red",
 main="Average Daily Pattern",xlab="Intervals",ylab="Number of Steps")
 ```
-![plot of chunk plot1](https://github.com/sofiyag87/ReproducibleData/blob/master/project1_files/figure-html/plot-1.png)
+![plot of chunk plot1](https://github.com/sofiyag87/ReproducibleData/blob/master/PA1_template_files/figure-html/plot-1.png)
 
 
 
@@ -99,7 +99,7 @@ steps_taken_new<-new_data%>%
 hist2<-hist(steps_taken_new$steps,breaks=20,col="grey",main="Total Number of steps taken each 
 day",xlab="steps taken")
 ```
-![plot of chunk hist2](https://github.com/sofiyag87/ReproducibleData/blob/master/project1_files/figure-html/hist2-1.png)
+![plot of chunk hist2](https://github.com/sofiyag87/ReproducibleData/blob/master/PA1_template_files/figure-html/hist2-1.png)
 **Report**
 ```{r new_data_report, results="hold"}
 new_data_report<-summary(steps_taken_new$steps)
@@ -114,7 +114,7 @@ hist<-hist(steps_taken$steps,breaks=15,col="grey",main="Total Number of steps ta
 ",xlab="steps taken",ylim=c(0,25))
 hist2<-hist(steps_taken_new$steps,breaks=15,col="grey",main="Total Number of steps taken each \n day New Dataset",xlab="steps taken",ylim=c(0,25))
 ```
-![plot of chunk hist3](https://github.com/sofiyag87/ReproducibleData/blob/master/project1_files/figure-html/impact-1.png)
+![plot of chunk hist3](https://github.com/sofiyag87/ReproducibleData/blob/master/PA1_template_files/figure-html/impact-1.png)
 ```{r report}
 impact_report<-rbind(original_data,new_data_report)
 impact_report
@@ -153,5 +153,5 @@ with(steps_taken_weekdays,
       xlab = "Intervals",
       ylab = "Number of Steps"))
 ```
-![plot of chunk date](https://github.com/sofiyag87/ReproducibleData/blob/master/project1_files/figure-html/date-1.png)
+![plot of chunk date](https://github.com/sofiyag87/ReproducibleData/blob/master/PA1_template_files/figure-html/date-1.png)
 From the figure we can see that the person who owns this dataset makes long walks trought the week and gets relaxed on the weekends.
